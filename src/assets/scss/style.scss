@@ -1,0 +1,53 @@
+@import './_varicble.scss';
+
+//reset
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 18px;
+  width:100vw;
+  overflow-x:hidden;
+}
+
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+  line-height: 1.5em;
+  background-color: white;
+}
+
+a {
+  color: #343440;
+  text-decoration: none;
+}
+
