@@ -51,3 +51,371 @@ a {
   text-decoration: none;
 }
 
+@each $colorKey,
+$color in $colors {
+  .text-#{$colorKey} {
+    color: $color
+  }
+
+  .bg-#{$colorKey} {
+    background-color: $color;
+  }
+}
+//text align
+@each $var in (left,center,right){
+  .text-#{$var} {
+    text-align: $var !important;
+  }
+}
+
+@each $sizeKey,
+$size in $font-size {
+  .fs-#{$sizeKey} {
+    font-size: $size * $base-font-size!important;
+  }
+}
+
+@each $lineHeightKey,
+$lineheight in $line-height {
+  .lh-#{$lineHeightKey} {
+    line-height: $lineheight * $base-line-height;
+  }
+}
+.lt-lg {
+  letter-spacing: 2px;
+}
+
+//font-weight
+.fw-md {
+  font-weight: 500;
+
+}
+
+.fw-lg {
+  font-weight: bold;
+}
+
+
+//width,height
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 410px;
+}
+
+.h-5 {
+  height: 16px;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-1 {
+  width: 28%;
+  margin-right: -1px;
+
+}
+
+.w-2 {
+  width: 45%;
+  margin-right: -1px;
+}
+
+.w-wechat {
+  width: 55%;
+}
+
+.w-wechat-1 {
+  width: 85%;
+}
+
+.w-common {
+  margin: auto;
+  width: 75%;
+}
+
+.w-50 {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.b-rl {
+  border-left: 1px solid map-get($colors, 'grey-1');
+  border-right: 1px solid map-get($colors, 'grey-1');
+}
+
+.b-r {
+  border-right: 1px solid map-get($colors, 'grey-1');
+}
+
+
+
+swiper-slide {
+  width: 100%;
+  height: 75%;
+}
+
+
+//flex
+.d-flex {
+  display: flex;
+
+}
+
+.d-if {
+  display: inline-flex;
+}
+
+.p-fix {
+  position: fixed;
+}
+
+.o-h {
+  overflow: hidden;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+
+}
+@each $key,
+$value in $flex-jc {
+  .jc-#{$key} {
+    justify-content: $value;
+  }
+}
+
+
+
+@each $key,
+$value in $flex-ai {
+  .ai-#{$key} {
+    align-items: $value;
+  }
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.m0a {
+  margin: 0 auto;
+}
+
+//button
+.btn {
+  border: none;
+  border-radius: 0.1111rem;
+  font-size: map-get($font-size, 'sm')*$base-font-size;
+  padding: 5px 10px;
+}
+
+
+.content {
+  margin: auto;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  margin-left: -1px;
+  margin-right: -1px;
+
+}
+
+
+.nav {
+  border-bottom: 1px solid $border-color;
+}
+
+.nav-items-left {
+  .nav-logo {
+    padding-right: 50px;
+    border-right: 2px solid $border-color;
+  }
+
+  .nav-item {
+    border-bottom: 5px solid transparent;
+    border-right: 2px solid $border-color;
+
+    &.active {
+      border-bottom: 5px solid #ff9100;
+    }
+  }
+
+}
+
+
+
+.bd {
+  border: 1px solid $border-color;
+}
+
+
+
+.top-nav {
+  .guide {
+    border-bottom: 3px solid map-get($colors, 'primary');
+    border-radius: 3px;
+  }
+
+  a {
+    color: map-get($colors, 'grey');
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  div {
+    padding: 6px;
+  }
+
+  padding-bottom: 1px;
+  border-bottom: 1px solid $border-color;
+}
+
+
+//iconfont
+.iconfont {
+  font-family: "iconfont" !important;
+  color: #343440;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.hot {
+    color: map-get($colors, 'primary')
+  }
+
+  &.ramain {
+    font-weight: bolder;
+    color: map-get($colors, 'primary')
+  }
+
+  &.book {
+    color: map-get($colors, 'primary')
+  }
+
+}
+
+//main
+.foot {
+  margin-top: 10px;
+  border-top: 1px solid $border-color;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+
+  /*  position: relative;
+   bottom: 0; */
+  max-height: 60px;
+  .icon-github {
+    color: map-get($colors, 'primary');
+  }
+
+}
+
+.admin {
+  display: inline;
+  color: map-get($colors, 'primary');
+  font-weight: 600;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 88;
+
+
+  .nav-item:hover {
+    background-color: #eeeeee;
+
+    a {
+      color: map-get($colors, 'primary');
+    }
+
+  }
+}
+
+.phone-ico {
+  padding-top: 11px;
+  cursor: default;
+}
+
+.nav-items-right {
+  .iconfont {
+    color: map-get($colors, 'primary')
+  }
+
+  .nav-item {
+    border-radius: 10%;
+
+    .iconfont {
+      margin-left: 0;
+      margin-right: 2px;
+    }
+  }
+}
+
+.wechat-img {
+  line-height: 0;
+  z-index: 99;
+  top: 5%;
+}
+
+//home
+
+
+
+//vue2-ditor
+.ql-align-center {
+  text-align: center;
+}
+.ql-align-justify {
+  text-align: justify;
+}
+.server-infor-body{
+  p{
+    white-space: pre-wrap;
+  }
+}
+.content-body {
+  white-space: pre-wrap;
+}
+
+@each $typeKey,
+$type in $spacing-types{
+  @each $sizeKey,
+  $size in $spacing-sizes {
+
+    //上下左右都相等
+    .#{$typeKey}-#{$sizeKey}{
+      #{$type}: $base-spacing-size * $size;
+    }
+    //左右相等
+    .#{$typeKey}x-#{$sizeKey}{
+      #{$type}-left: $base-spacing-size * $size;
+      #{$type}-right: $base-spacing-size * $size;
+    }
+    //上下相等
+    .#{$typeKey}y-#{$sizeKey} {
+      #{$type}-top: $base-spacing-size * $size;
+      #{$type}-bottom: $base-spacing-size * $size;
+    }
+
+    @each $directionKey,
+    $direction in $spacing-directions {
+      .#{$typeKey}#{$directionKey}-#{$sizeKey} {
+        #{$type}-#{$direction}: $base-spacing-size * $size;
+      }
+    }
+  }
+}
