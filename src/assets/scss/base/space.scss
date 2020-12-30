@@ -1,0 +1,97 @@
+//实现共用的 margin padding等
+
+// 基础间距 4px
+// @group base-space 基础边距
+// @access public
+$--space-base: 4px;
+
+//默认间距倍数
+//@group base-space基础边距
+//@access public
+$--times: 0;
+
+//四周边距
+
+//@group base-space基础边距
+//@access public
+//@name --space-around
+//@param {String} $space [margin] - 边距类型 margin 外边距 padding 内边距
+//@param {Number} $times [0] - 倍数
+//@param {Number} $--space-base [4px] - 基础间距
+@mixin --space-around($space:margin, $times: $--times, $space-base:$--space-base){
+  #{$space}: $times * $space-base;
+}
+
+// 横向边距
+
+//@group base-space基础边距
+//@access public
+//@name --space-x
+//@param {String} $space [margin] - 边距类型 margin 外边距 padding 内边距
+//@param {Number} $times [0] - 倍数
+//@param {Number} $--space-base [4px] - 基础间距
+@mixin --space-x($space:margin,$times:$--times,$space-base:$--space-base){
+  #{$space}-left: $times * $space-base;
+  #{$space}-right: $times * $space-base;
+}
+
+/// 纵轴边距
+///
+/// @group base-space基础边距
+/// @access public
+/// @name --space-y
+/// @param {String} $space [margin] - 边距类型 margin 外边距 padding 内边距
+/// @param {Number} $times [0] - 倍数
+/// @param {Number} $--space-base [4px] - 基础间距
+@mixin --space-y($space:margin,$times: $--times,$space-base:$--space-base){
+  #{$space}-top: $times * $space-base;
+  #{$space}-bottom: $times * $space-base;
+}
+/// 上边距
+///
+/// @group base-space基础边距
+/// @access public
+/// @name --space-top
+/// @param {String} $space [margin] - 边距类型 margin 外边距 padding 内边距
+/// @param {Number} $times [0] - 倍数
+/// @param {Number} $--space-base [4px] - 基础间距
+@mixin --space-top($space:margin,$times:$--times,$space-base:$--space-base){
+  #{$space}-top: $times * $space-base;
+}
+/// 下边距
+///
+/// @group base-space基础边距
+/// @access public
+/// @name --space-down
+/// @param {String} $space [margin] - 边距类型 margin 外边距 padding 内边距
+/// @param {Number} $times [0] - 倍数
+/// @param {Number} $--space-base [4px] - 基础间距
+@mixin --space-down($space: margin,$times: $--times,$space-base:$--space-base){
+  #{$space}-bottom: $times * $space-base;
+}
+
+/// 左边距
+///
+/// @group base-space基础边距
+/// @access public
+/// @name --space-left
+/// @param {String} $space [margin] - 边距类型 margin 外边距 padding 内边距
+/// @param {Number} $times [0] - 倍数
+/// @param {Number} $--space-base [4px] - 基础间距
+@mixin --space-left($space: margin, $times: $--times, $space-base: $--space-base) {
+  #{$space}-left: $times * $space-base;
+}
+
+/// 右边距
+///
+/// @group base-space基础边距
+/// @access public
+/// @name --space-right
+/// @param {String} $space [margin] - 边距类型 margin 外边距 padding 内边距
+/// @param {Number} $times [0] - 倍数
+/// @param {Number} $--space-base [4px] - 基础间距
+@mixin --space-right($space: margin, $times: $--times, $space-base: $--space-base) {
+  #{$space}-right: $times * $space-base;
+}
+
+

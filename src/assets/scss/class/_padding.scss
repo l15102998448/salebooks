@@ -1,0 +1,478 @@
+/**
+* @file padding
+* @author OCJ-Team 2019
+* @version 0.0.1
+* @see {@link https://lanhuapp.com/web/#/item/project/board/detail?pid=0024a97a-916f-4943-b0a6-2327c9dc2e70&project_id=0024a97a-916f-4943-b0a6-2327c9dc2e70&image_id=31f5b9de-3f94-464b-978f-09cd70269b6e}
+* @description 内边距
+**/
+
+/// .p-0 | 内边距 0
+/// @group class-padding
+/// @access public
+.p-0 {
+  @include --space-around(padding);
+}
+
+/// .p-4 | 内边距 4
+/// @group class-padding
+/// @access public
+.p-4 {
+  @include --space-around(padding, 1);
+}
+/// .p-8 | 内边距 8
+/// @group class-padding
+/// @access public
+.p-8 {
+  @include --space-around(padding, 2);
+}
+/// .p-12 | 内边距 12
+/// @group class-padding
+/// @access public
+.p-12 {
+  @include --space-around(padding, 3);
+}
+/// .p-16 | 内边距 16
+/// @group class-padding
+/// @access public
+.p-16 {
+  @include --space-around(padding, 4);
+}
+/// .p-20 | 内边距 20
+/// @group class-padding
+/// @access public
+.p-20 {
+  @include --space-around(padding, 5);
+}
+/// .p-24 | 内边距 24
+/// @group class-padding
+/// @access public
+.p-24 {
+  @include --space-around(padding, 6);
+}
+/// .p-28 | 内边距 28
+/// @group class-padding
+/// @access public
+.p-28 {
+  @include --space-around(padding, 7);
+}
+/// .p-32 | 内边距 32
+/// @group class-padding
+/// @access public
+.p-32 {
+  @include --space-around(padding, 8);
+}
+/// .p-36 | 内边距 36
+/// @group class-padding
+/// @access public
+.p-36 {
+  @include --space-around(padding, 9);
+}
+/// .p-40 | 内边距 40
+/// @group class-padding
+/// @access public
+.p-40 {
+  @include --space-around(padding, 10);
+}
+
+/// .pt-0 | 内边上边距 0
+/// @group class-padding
+/// @access public
+.pt-0 {
+  @include --space-top(padding);
+}
+/// .pt-4 | 内边上边距 4
+/// @group class-padding
+/// @access public
+.pt-4 {
+  @include --space-top(padding, 1);
+}
+/// .pt-8 | 内边上边距 8
+/// @group class-padding
+/// @access public
+.pt-8 {
+  @include --space-top(padding, 2);
+}
+/// .pt-12 | 内边上边距 12
+/// @group class-padding
+/// @access public
+.pt-12 {
+  @include --space-top(padding, 3);
+}
+/// .pt-16 | 内边上边距 16
+/// @group class-padding
+/// @access public
+.pt-16 {
+  @include --space-top(padding, 4);
+}
+/// .pt-20 | 内边上边距 20
+/// @group class-padding
+/// @access public
+.pt-20 {
+  @include --space-top(padding, 5);
+}
+/// .pt-24 | 内边上边距 24
+/// @group class-padding
+/// @access public
+.pt-24 {
+  @include --space-top(padding, 6);
+}
+/// .pt-28 | 内边上边距 28
+/// @group class-padding
+/// @access public
+.pt-28 {
+  @include --space-top(padding, 7);
+}
+/// .pt-32 | 内边上边距 32
+/// @group class-padding
+/// @access public
+.pt-32 {
+  @include --space-top(padding, 8);
+}
+/// .pt-36 | 内边上边距 36
+/// @group class-padding
+/// @access public
+.pt-36 {
+  @include --space-top(padding, 9);
+}
+/// .pt-40 | 内边上边距 40
+/// @group class-padding
+/// @access public
+.pt-40 {
+  @include --space-top(padding, 10);
+}
+
+/// .pr-0 | 内边右边距 0
+/// @group class-padding
+/// @access public
+.pr-0 {
+  @include --space-right(padding);
+}
+/// .pr-4 | 内边右边距 4
+/// @group class-padding
+/// @access public
+.pr-4 {
+  @include --space-right(padding, 1);
+}
+/// .pr-8 | 内边右边距 8
+/// @group class-padding
+/// @access public
+.pr-8 {
+  @include --space-right(padding, 2);
+}
+/// .pr-12 | 内边右边距 12
+/// @group class-padding
+/// @access public
+.pr-12 {
+  @include --space-right(padding, 3);
+}
+/// .pr-16 | 内边右边距 16
+/// @group class-padding
+/// @access public
+.pr-16 {
+  @include --space-right(padding, 4);
+}
+/// .pr-20 | 内边右边距 29
+/// @group class-padding
+/// @access public
+.pr-20 {
+  @include --space-right(padding, 5);
+}
+/// .pr-24 | 内边右边距 24
+/// @group class-padding
+/// @access public
+.pr-24 {
+  @include --space-right(padding, 6);
+}
+/// .pr-28 | 内边右边距 28
+/// @group class-padding
+/// @access public
+.pr-28 {
+  @include --space-right(padding, 7);
+}
+/// .pr-32 | 内边右边距 32
+/// @group class-padding
+/// @access public
+.pr-32 {
+  @include --space-right(padding, 8);
+}
+/// .pr-36 | 内边右边距 36
+/// @group class-padding
+/// @access public
+.pr-36 {
+  @include --space-right(padding, 9);
+}
+/// .pr-40 | 内边右边距 40
+/// @group class-padding
+/// @access public
+.pr-40 {
+  @include --space-right(padding, 10);
+}
+
+/// .pb-0 | 内边下边距 0
+/// @group class-padding
+/// @access public
+.pb-0 {
+  @include --space-down(padding);
+}
+/// .pb-4 | 内边下边距 4
+/// @group class-padding
+/// @access public
+.pb-4 {
+  @include --space-down(padding, 1);
+}
+/// .pb-8 | 内边下边距 8
+/// @group class-padding
+/// @access public
+.pb-8 {
+  @include --space-down(padding, 2);
+}
+/// .pb-12 | 内边下边距 12
+/// @group class-padding
+/// @access public
+.pb-12 {
+  @include --space-down(padding, 3);
+}
+/// .pb-16 | 内边下边距 16
+/// @group class-padding
+/// @access public
+.pb-16 {
+  @include --space-down(padding, 4);
+}
+/// .pb-20 | 内边下边距 20
+/// @group class-padding
+/// @access public
+.pb-20 {
+  @include --space-down(padding, 5);
+}
+/// .pb-24 | 内边下边距 24
+/// @group class-padding
+/// @access public
+.pb-24 {
+  @include --space-down(padding, 6);
+}
+/// .pb-28 | 内边下边距 28
+/// @group class-padding
+/// @access public
+.pb-28 {
+  @include --space-down(padding, 7);
+}
+/// .pb-32 | 内边下边距 32
+/// @group class-padding
+/// @access public
+.pb-32 {
+  @include --space-down(padding, 8);
+}
+/// .pb-36 | 内边下边距 36
+/// @group class-padding
+/// @access public
+.pb-36 {
+  @include --space-down(padding, 9);
+}
+/// .pb-40 | 内边下边距 40
+/// @group class-padding
+/// @access public
+.pb-40 {
+  @include --space-down(padding, 10);
+}
+
+/// .pb-0 | 内边左边距 0
+/// @group class-padding
+/// @access public
+.pl-0 {
+  @include --space-left(padding);
+}
+/// .pb-4 | 内边左边距 4
+/// @group class-padding
+/// @access public
+.pl-4 {
+  @include --space-left(padding, 1);
+}
+/// .pb-8 | 内边左边距 8
+/// @group class-padding
+/// @access public
+.pl-8 {
+  @include --space-left(padding, 2);
+}
+/// .pb-12 | 内边左边距 12
+/// @group class-padding
+/// @access public
+.pl-12 {
+  @include --space-left(padding, 3);
+}
+/// .pb-16 | 内边左边距 16
+/// @group class-padding
+/// @access public
+.pl-16 {
+  @include --space-left(padding, 4);
+}
+/// .pb-20 | 内边左边距 20
+/// @group class-padding
+/// @access public
+.pl-20 {
+  @include --space-left(padding, 5);
+}
+/// .pb-24 | 内边左边距 24
+/// @group class-padding
+/// @access public
+.pl-24 {
+  @include --space-left(padding, 6);
+}
+/// .pb-28 | 内边左边距 28
+/// @group class-padding
+/// @access public
+.pl-28 {
+  @include --space-left(padding, 7);
+}
+/// .pb-32 | 内边左边距 32
+/// @group class-padding
+/// @access public
+.pl-32 {
+  @include --space-left(padding, 8);
+}
+/// .pb-36 | 内边左边距 36
+/// @group class-padding
+/// @access public
+.pl-36 {
+  @include --space-left(padding, 9);
+}
+/// .pb-40 | 内边左边距 40
+/// @group class-padding
+/// @access public
+.pl-40 {
+  @include --space-left(padding, 10);
+}
+
+/// .px-0 | 横向内边距 0
+/// @group class-padding
+/// @access public
+.px-0 {
+  @include --space-x(padding);
+}
+
+/// .px-4 | 横向内边距 4
+/// @group class-padding
+/// @access public
+.px-4 {
+  @include --space-x(padding, 1);
+}
+
+/// .px-8 | 横向内边距 8
+/// @group class-padding
+/// @access public
+.px-8 {
+  @include --space-x(padding, 2);
+}
+/// .px-12 | 横向内边距 12
+/// @group class-padding
+/// @access public
+.px-12 {
+  @include --space-x(padding, 3);
+}
+/// .px-16 | 横向内边距 16
+/// @group class-padding
+/// @access public
+.px-16 {
+  @include --space-x(padding, 4);
+}
+/// .px-20 | 横向内边距 20
+/// @group class-padding
+/// @access public
+.px-20 {
+  @include --space-x(padding, 5);
+}
+/// .px-24 | 横向内边距 24
+/// @group class-padding
+/// @access public
+.px-24 {
+  @include --space-x(padding, 6);
+}
+/// .px-28 | 横向内边距 28
+/// @group class-padding
+/// @access public
+.px-28 {
+  @include --space-x(padding, 7);
+}
+/// .px-32 | 横向内边距 32
+/// @group class-padding
+/// @access public
+.px-32 {
+  @include --space-x(padding, 8);
+}
+/// .px-36 | 横向内边距 36
+/// @group class-padding
+/// @access public
+.px-36 {
+  @include --space-x(padding, 9);
+}
+/// .px-40 | 横向内边距 40
+/// @group class-padding
+/// @access public
+.px-40 {
+  @include --space-x(padding, 10);
+}
+/// .py-0 | 纵向内边距 0
+/// @group class-padding
+/// @access public
+.py-0 {
+  @include --space-y(padding, 0);
+}
+/// .py-4 | 纵向内边距 4
+/// @group class-padding
+/// @access public
+.py-4 {
+  @include --space-y(padding, 1);
+}
+/// .py-8 | 纵向内边距 8
+/// @group class-padding
+/// @access public
+.py-8 {
+  @include --space-y(padding, 2);
+}
+/// .py-12 | 纵向内边距 12
+/// @group class-padding
+/// @access public
+.py-12 {
+  @include --space-y(padding, 3);
+}
+/// .py-16 | 纵向内边距 16
+/// @group class-padding
+/// @access public
+.py-16 {
+  @include --space-y(padding, 4);
+}
+/// .py-20 | 纵向内边距 20
+/// @group class-padding
+/// @access public
+.py-20 {
+  @include --space-y(padding, 5);
+}
+/// .py-24 | 纵向内边距 24
+/// @group class-padding
+/// @access public
+.py-24 {
+  @include --space-y(padding, 6);
+}
+/// .py-28 | 纵向内边距 28
+/// @group class-padding
+/// @access public
+.py-28 {
+  @include --space-y(padding, 7);
+}
+/// .py-32 | 纵向内边距 32
+/// @group class-padding
+/// @access public
+.py-32 {
+  @include --space-y(padding, 8);
+}
+/// .py-36 | 纵向内边距 36
+/// @group class-padding
+/// @access public
+.py-36 {
+  @include --space-y(padding, 9);
+}
+/// .py-40 | 纵向内边距 40
+/// @group class-padding
+/// @access public
+.py-40 {
+  @include --space-y(padding, 10);
+}

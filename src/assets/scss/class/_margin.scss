@@ -1,0 +1,532 @@
+//外边距 margin
+
+// 外边距 0
+/// @group class-margin
+/// @access public
+.m-0 {
+  @include --space-around(margin);
+}
+
+/// 外边距 4
+/// @group class-margin
+/// @access public
+.m-4 {
+  @include --space-around(margin,1);
+}
+
+//外边距 8
+/// @grounp class-margin
+/// @access public
+.m-8 {
+  @include --space-around(margin,2)
+}
+
+/// 外边距 12
+/// @group class-margin
+/// @access public
+.m-12 {
+  @include --space-around(margin, 3);
+}
+
+/// 外边距 16
+/// @group class-margin
+/// @access public
+.m-16 {
+  @include --space-around(margin, 4);
+}
+
+/// 外边距 20
+/// @group class-margin
+/// @access public
+.m-20 {
+  @include --space-around(margin, 5);
+}
+
+/// 外边距 24
+/// @group class-margin
+/// @access public
+.m-24 {
+  @include --space-around(margin, 6);
+}
+
+/// 外边距 28
+/// @group class-margin
+/// @access public
+.m-28 {
+  @include --space-around(margin, 7);
+}
+
+/// 外边距 32
+/// @group class-margin
+/// @access public
+.m-32 {
+  @include --space-around(margin, 8);
+}
+
+/// 外边距 36
+/// @group class-margin
+/// @access public
+.m-36 {
+  @include --space-around(margin, 9);
+}
+
+/// 外边距 40
+/// @group class-margin
+/// @access public
+.m-40 {
+  @include --space-around(margin, 10);
+}
+
+/// 上外边距 0
+/// @group class-margin
+/// @access public
+.mt-0 {
+  @include --space-top(margin)
+}
+/// 上外边距 4
+/// @group class-margin
+/// @access public
+.mt-4 {
+  @include --space-top(margin, 1);
+}
+
+/// 上外边距 8
+/// @group class-margin
+/// @access public
+.mt-8 {
+  @include --space-top(margin, 2);
+}
+
+/// 上外边距 12
+/// @group class-margin
+/// @access public
+.mt-12 {
+  @include --space-top(margin, 3);
+}
+
+/// 上外边距 16
+/// @group class-margin
+/// @access public
+.mt-16 {
+  @include --space-top(margin, 4);
+}
+
+/// 上外边距 20
+/// @group class-margin
+/// @access public
+.mt-20 {
+  @include --space-top(margin, 5);
+}
+
+/// 上外边距 24
+/// @group class-margin
+/// @access public
+.mt-24 {
+  @include --space-top(margin, 6);
+}
+
+/// 上外边距 28
+/// @group class-margin
+/// @access public
+.mt-28 {
+  @include --space-top(margin, 7);
+}
+
+/// 上外边距 32
+/// @group class-margin
+/// @access public
+.mt-32 {
+  @include --space-top(margin, 8);
+}
+
+/// 上外边距 36
+/// @group class-margin
+/// @access public
+.mt-36 {
+  @include --space-top(margin, 9);
+}
+
+/// 上外边距 40
+/// @group class-margin
+/// @access public
+.mt-40 {
+  @include --space-top(margin, 10);
+}
+
+//右外边距 0
+/// @group class-margin
+/// @access public
+.mr-0 {
+  @include --space-right(margin)
+}
+/// 右外边距 4
+/// @group class-margin
+/// @access public
+.mr-4 {
+  @include --space-right(margin, 1);
+}
+
+/// 右外边距 8
+/// @group class-margin
+/// @access public
+.mr-8 {
+  @include --space-right(margin, 2);
+}
+
+/// 右外边距 12
+/// @group class-margin
+/// @access public
+.mr-12 {
+  @include --space-right(margin, 3);
+}
+
+/// 右外边距 16
+/// @group class-margin
+/// @access public
+.mr-16 {
+  @include --space-right(margin, 4);
+}
+
+/// 右外边距 20
+/// @group class-margin
+/// @access public
+.mr-20 {
+  @include --space-right(margin, 5);
+}
+
+/// 右外边距 24
+/// @group class-margin
+/// @access public
+.mr-24 {
+  @include --space-right(margin, 6);
+}
+
+/// 右外边距 28
+/// @group class-margin
+/// @access public
+.mr-28 {
+  @include --space-right(margin, 7);
+}
+
+/// 右外边距 32
+/// @group class-margin
+/// @access public
+.mr-32 {
+  @include --space-right(margin, 8);
+}
+
+/// 右外边距 36
+/// @group class-margin
+/// @access public
+.mr-36 {
+  @include --space-right(margin, 9);
+}
+
+/// 右外边距 40
+/// @group class-margin
+/// @access public
+.mr-40 {
+  @include --space-right(margin, 10);
+}
+
+/// 下外边距 0
+/// @group class-margin
+/// @access public
+.mb-0 {
+  @include --space-down(margin);
+}
+
+/// 下外边距 4
+/// @group class-margin
+/// @access public
+.mb-4 {
+  @include --space-down(margin, 1);
+}
+
+/// 下外边距 8
+/// @group class-margin
+/// @access public
+.mb-8 {
+  @include --space-down(margin, 2);
+}
+
+/// 下外边距 12
+/// @group class-margin
+/// @access public
+.mb-12 {
+  @include --space-down(margin, 3);
+}
+
+/// 下外边距 16
+/// @group class-margin
+/// @access public
+.mb-16 {
+  @include --space-down(margin, 4);
+}
+
+/// 下外边距 20
+/// @group class-margin
+/// @access public
+.mb-20 {
+  @include --space-down(margin, 5);
+}
+
+/// 下外边距 24
+/// @group class-margin
+/// @access public
+.mb-24 {
+  @include --space-down(margin, 6);
+}
+
+/// 下外边距 28
+/// @group class-margin
+/// @access public
+.mb-28 {
+  @include --space-down(margin, 7);
+}
+
+/// 下外边距 32
+/// @group class-margin
+/// @access public
+.mb-32 {
+  @include --space-down(margin, 8);
+}
+
+/// 下外边距 36
+/// @group class-margin
+/// @access public
+.mb-36 {
+  @include --space-down(margin, 9);
+}
+
+/// 下外边距 40
+/// @group class-margin
+/// @access public
+.mb-40 {
+  @include --space-down(margin, 10);
+}
+
+/// 左外边距 0
+/// @group class-margin
+/// @access public
+.ml-0 {
+  @include --space-left(margin);
+}
+/// 左外边距 4
+/// @group class-margin
+/// @access public
+.ml-4 {
+  @include --space-left(margin, 1);
+}
+
+/// 左外边距 8
+/// @group class-margin
+/// @access public
+.ml-8 {
+  @include --space-left(margin, 2);
+}
+
+/// 左外边距 12
+/// @group class-margin
+/// @access public
+.ml-12 {
+  @include --space-left(margin, 3);
+}
+
+/// 左外边距 16
+/// @group class-margin
+/// @access public
+.ml-16 {
+  @include --space-left(margin, 4);
+}
+
+/// 左外边距 20
+/// @group class-margin
+/// @access public
+.ml-20 {
+  @include --space-left(margin, 5);
+}
+
+/// 左外边距 24
+/// @group class-margin
+/// @access public
+.ml-24 {
+  @include --space-left(margin, 6);
+}
+
+/// 左外边距 28
+/// @group class-margin
+/// @access public
+.ml-28 {
+  @include --space-left(margin, 7);
+}
+
+/// 左外边距 32
+/// @group class-margin
+/// @access public
+.ml-32 {
+  @include --space-left(margin, 8);
+}
+
+/// 左外边距 36
+/// @group class-margin
+/// @access public
+.ml-36 {
+  @include --space-left(margin, 9);
+}
+
+/// 左外边距 40
+/// @group class-margin
+/// @access public
+.ml-40 {
+  @include --space-left(margin, 10);
+}
+
+/// 横向外边距 0
+/// @group class-margin
+/// @access public
+.mx-0 {
+  @include --space-x(margin,0);
+}
+/// 横向外边距 4
+/// @group class-margin
+/// @access public
+.mx-4 {
+  @include --space-x(margin, 1);
+}
+
+/// 横向外边距 8
+/// @group class-margin
+/// @access public
+.mx-8 {
+  @include --space-x(margin, 2);
+}
+
+/// 横向外边距 12
+/// @group class-margin
+/// @access public
+.mx-12 {
+  @include --space-x(margin, 3);
+}
+
+/// 横向外边距 16
+/// @group class-margin
+/// @access public
+.mx-16 {
+  @include --space-x(margin, 4);
+}
+
+/// 横向外边距 20
+/// @group class-margin
+/// @access public
+.mx-20 {
+  @include --space-x(margin, 5);
+}
+
+/// 横向外边距 24
+/// @group class-margin
+/// @access public
+.mx-24 {
+  @include --space-x(margin, 6);
+}
+
+/// 横向外边距 28
+/// @group class-margin
+/// @access public
+.mx-28 {
+  @include --space-x(margin, 7);
+}
+
+/// 横向外边距 32
+/// @group class-margin
+/// @access public
+.mx-32 {
+  @include --space-x(margin, 8);
+}
+
+/// 横向外边距 36
+/// @group class-margin
+/// @access public
+.mx-36 {
+  @include --space-x(margin, 9);
+}
+
+/// 横向外边距 40
+/// @group class-margin
+/// @access public
+.mx-40 {
+  @include --space-x(margin, 10);
+}
+/// 纵向外边距 0
+/// @group class-margin
+/// @access public
+.my-0 {
+  @include --space-y(margin,0);
+}
+
+/// 纵向外边距4
+.my-4 {
+  @include --space-y(margin,1);
+}
+/// 纵向外边距 8
+/// @group class-margin
+/// @access public
+.my-8 {
+  @include --space-y(margin, 2);
+}
+
+/// 纵向外边距 12
+/// @group class-margin
+/// @access public
+.my-12 {
+  @include --space-y(margin, 3);
+}
+
+/// 纵向外边距 16
+/// @group class-margin
+/// @access public
+.my-16 {
+  @include --space-y(margin, 4);
+}
+
+/// 纵向外边距 20
+/// @group class-margin
+/// @access public
+.my-20 {
+  @include --space-y(margin, 5);
+}
+
+/// 纵向外边距 24
+/// @group class-margin
+/// @access public
+.my-24 {
+  @include --space-y(margin, 6);
+}
+
+/// 纵向外边距 28
+/// @group class-margin
+/// @access public
+.my-28 {
+  @include --space-y(margin, 7);
+}
+
+/// 纵向外边距 32
+/// @group class-margin
+/// @access public
+.my-32 {
+  @include --space-y(margin, 8);
+}
+
+/// 纵向外边距 36
+/// @group class-margin
+/// @access public
+.my-36 {
+  @include --space-y(margin, 9);
+}
+
+/// 纵向外边距 40
+/// @group class-margin
+/// @access public
+.my-40 {
+  @include --space-y(margin, 10);
+}

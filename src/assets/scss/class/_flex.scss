@@ -1,0 +1,81 @@
+/**
+* @file flex
+* @author OCJ-Team 2019
+* @version 0.0.1
+* @see {@link https://lanhuapp.com/web/#/item/project/board/detail?pid=0024a97a-916f-4943-b0a6-2327c9dc2e70&project_id=0024a97a-916f-4943-b0a6-2327c9dc2e70&image_id=31f5b9de-3f94-464b-978f-09cd70269b6e}
+* @description flex布局
+**/
+
+/// 换行
+/// @group class-flex
+/// @access public
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/// 垂直排列
+/// @group class-flex
+/// @access public
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/// 在元素末尾位置水平对齐
+/// @group class-flex
+/// @access public
+.flex-ju-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/// 居中水平对齐
+/// @group class-flex
+/// @access public
+.flex-ju-center {
+  display: flex;
+  justify-content: center;
+}
+
+/// 两端不留白水平对齐
+/// @group class-flex
+/// @access public
+.flex-ju-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+/// 在元素中间位置垂直对齐
+/// @group class-flex
+/// @access public
+.flex-al-center {
+  display: flex;
+  align-items: center;
+}
+
+/// 元素水平垂直居中对齐
+/// @group class-flex
+/// @access public
+.flex-ju-al-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/// 元素水平两端，垂直居中对齐
+/// @group class-flex
+/// @access public
+.flex-ju-al-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/// flex:auto
+/// @group class-flex
+/// @access public
+.flex-auto {
+  display: flex;
+  flex: auto;
+}

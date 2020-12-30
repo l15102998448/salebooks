@@ -4,7 +4,7 @@
         <el-input placeholder="请输入账号" v-model="form.account">
           <template #suffix></template>
         </el-input>
-        <el-input placeholder="请输入密码" v-model="form.password">
+        <el-input placeholder="请输入密码" v-model="form.password" type="password">
           <template #suffix icon="el-icon-user"></template>
         </el-input>
       </el-form>
@@ -13,12 +13,12 @@
 
 <script>
 export default {
-  name: 'home',
-  data() {
+  name: 'login',
+  data: function () {
     return {
-      form:{
-        account:'', //账号
-        password:'', //密码
+      form: {
+        // account: '',
+        // password: ''
       }
 
     }
@@ -27,7 +27,8 @@ export default {
 </script>
 <style lang="scss">
   .main {
-    /*background-image: url("../assets/img/login-bg.jpg");*/
+    height: 100vh;
+    background: url("../assets/img/login-bg.jpg") no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
