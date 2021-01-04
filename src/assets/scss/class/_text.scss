@@ -1,0 +1,35 @@
+/// .text-12 | 字体大小 font-size：12px lineheight:20px;
+.text-12 {
+  @include --get-text-style(12)
+}
+/// .text-14 | 字体大小 font-size：14px lineheight:20px;
+.text-14 {
+  @include --get-text-style(14)
+}
+/// .text-12 | 字体大小 font-size：16px lineheight:24px;
+.text-16 {
+  @include --get-text-style(16)
+}
+/// .text-18 | 字体大小  font-size: 18px lineheight: 26px
+/// @group class-text
+/// @access public
+.text-18 {
+  @include --get-text-style(18);
+}
+/// .text-20 | 字体大小  font-size: 20px lineheight:28px
+/// @group class-text
+/// @access public
+.text-20 {
+  @include --get-text-style(20);
+}
+
+/// .text-24 | 字体大小  font-size: 24px lineheight:32px
+/// @group class-text
+/// @access public
+.text-24 {
+  @include --get-text-style(24);
+}
+/// .white-space-nowrap | 文字不换行
+.white-space-nowarp {
+  white-space: nowrap;
+}

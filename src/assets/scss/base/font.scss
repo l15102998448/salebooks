@@ -1,0 +1,164 @@
+/// ElementUI字体库
+/// @group base - 字体
+/// @access public
+// $--font-path: 'https://unpkg.com/element-ui@2.8.2/lib/theme-chalk/fonts';
+$--font-path:'//frontendonline-erp.ocj.com.cn/fonts';
+// $--font-path:'//ocj-erp-frontenddaily.oss-cn-shanghai.aliyuncs.com';
+
+/// 字体格式
+$--font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'SourceHanSans',  'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',  'Segoe UI Emoji', 'Segoe UI Symbol';
+
+/// 12号字体
+$--font-size-12: 12px;
+
+/// 14号字体
+$--font-size-14: 14px;
+
+/// 16号字体
+$--font-size-16: 16px;
+
+/// 20号字体
+$--font-size-20: 20px;
+
+/// 24号字体
+$--font-size-24: 24px;
+
+/// 30号字体
+$--font-size-30: 30px;
+
+/// h1 字体大小
+$--font-size-h1: $--font-size-30;
+
+/// h2 字体大小
+$--font-size-h2: $--font-size-24;
+
+/// h3 字体大小
+$--font-size-h3: $--font-size-20;
+
+/// h4 字体大小
+$--font-size-h4: $--font-size-16;
+
+/// h5 字体大小
+$--font-size-h5: $--font-size-14;
+
+/// h6 字体大小
+$--font-size-h6: $--font-size-12;
+
+// 字体20行高
+$--font-lineheight-20: 20px;
+
+// 字体22行高
+$--font-lineheight-22: 22px;
+
+// 字体24行高
+$--font-lineheight-22: 24px;
+
+/// 字体28行高
+/// @group base-字体
+/// @access public
+$--font-lineheight-28: 28px;
+
+/// 字体32行高
+/// @group base-字体
+/// @access public
+$--font-lineheight-32: 32px;
+
+/// 字体38行高
+/// @group base-字体
+/// @access public
+$--font-lineheight-38: 38px;
+
+/// 粗体
+/// @group base-字体
+/// @access public
+$--font-weight-bold: 700;
+
+/// 细体
+/// @group base-字体
+/// @access public
+$--font-weight-normal: 500;
+
+/// 超细
+/// @group base-字体
+/// @access public
+$--font-weight-400: 400;
+
+/// Element UI拓展大型字体
+/// @group base-字体
+/// @access public
+$--font-size-extra-large: $--font-size-20;
+
+/// Element UI大型字体
+/// @group base-字体
+/// @access public
+$--font-size-large: $--font-size-16;
+
+/// Element UI中型字体
+/// @group base-字体
+/// @access public
+$--font-size-medium: $--font-size-14;
+
+/// Element UI默认字体
+/// @group base-字体
+/// @access public
+$--font-size-base: $--font-size-14;
+$--size-base: 14px;
+
+/// Element UI小字体
+/// @group base-字体
+/// @access public
+$--font-size-small: $--font-size-12;
+
+/// Element UI拓展小字体
+/// @group base-字体
+/// @access public
+$--font-size-extra-small: $--font-size-12;
+
+/// Element 细体1
+/// @group base-字体
+/// @access public
+$--font-weight-primary: $--font-weight-normal;
+
+/// Element 细体2
+/// @group base-字体
+/// @access public
+$--font-weight-secondary: $--font-weight-normal;
+
+/// Element 默认行高1
+/// @group base-字体
+/// @access public
+$--font-line-height-primary: $--font-lineheight-24;
+
+/// Element 默认行高2
+/// @group base-字体
+/// @access public
+$--font-line-height-secondary: $--font-lineheight-20;
+
+/// 根据字体大小获取字体对应行高
+///
+/// @group base-字体
+/// @access public
+/// @name --get-lineheight
+/// @param {Number} $font-size - 字体大小
+/// @return {String} 字体对应行高
+@function --get-lineheight($font-size) {
+  //14px文字返回20px 行高，其他都是+8px
+  @if $font-size == 14px {
+      @return 20px;
+  } @else {
+      @return $font-size + 8px;
+  }
+}
+
+/// 根据字体大小获取文字样式
+/// name --get-text-style
+/// @param {Number} $font-size [12] -字体大小
+@mixin --get-text-style($fontSize: 12) {
+  font-size: #{$fontSize}px;
+  line-height: --get-lineheight($fontSize);
+}
+/// Element disabled字体颜色
+/// @group base-字体
+/// @access public
+/// @type color
+$--font-color-disabled-base: $--color-gray-500;
