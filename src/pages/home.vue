@@ -14,7 +14,7 @@
       <img src="../assets/img/nav-banner.jpg" style="width: 80%">
     </div>
     <div class="navigation">
-      <div class="nav-content d-flex">
+      <div class="nav-content d-flex" v-if="$route.path !== '/car'">
         <div class="d-flex nav-con-left">
           <img src="../assets/img/books.png" class="mr-32">
           <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
@@ -53,14 +53,19 @@ export default {
     }
   },
   created () {
-    console.log('activeIndex', this.activeIndex)
     this.handleSelect('1')
+    this.$bus.$on('changeIndex', () => {
+      this.handleSelect('1')
+    })
   },
   methods: {
     handleSelect (event, value) {
+      console.log(this.activeIndex, event)
       switch (event) {
         case '1':
-          this.$router.push({name: 'homeContent'})
+          if (this.$route.path !== '/homeContent') {
+            this.$router.push({name: 'homeContent'})
+          }
           break
         case '2':
         case '3':
@@ -71,8 +76,10 @@ export default {
             this.$router.push({name: 'category'})
           }
       }
-      console.log(typeof event, value )
     }
+  },
+  destroyed () {
+    this.$bus.$off('changeIndex')
   }
 }
 </script>

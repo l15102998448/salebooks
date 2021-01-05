@@ -21,7 +21,13 @@
   display: flex;
   flex-direction: column;
 }
-
+/// 在元素开始位置水平对齐
+/// @group class-flex
+/// @access public
+.flex-ju-start {
+  display: flex;
+  justify-content: flex-start;
+}
 /// 在元素末尾位置水平对齐
 /// @group class-flex
 /// @access public

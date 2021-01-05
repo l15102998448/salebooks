@@ -5,6 +5,8 @@ import Login from '@/pages/login'
 import Registered from '@/pages/registered'
 import HomeContent from '@/pages/homeContent'
 import Category from '@/pages/category'
+import Detail from '@/pages/detail'
+import Car from '@/pages/car'
 
 Vue.use(Router)
 
@@ -29,6 +31,16 @@ export default new Router({
           path: '/category',
           name: 'category',
           component: Category
+        },
+        {
+          path: '/detail',
+          name: 'detail',
+          component: Detail
+        },
+        {
+          path: '/car',
+          name: 'car',
+          component: Car
         }
       ]
     },
